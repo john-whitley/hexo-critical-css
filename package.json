@@ -1,0 +1,28 @@
+{
+  "name": "hexo-critical-css",
+  "version": "1.0.0",
+  "description": "Run critical in a hexo project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/john-whitley/hexo-critical-css.git"
+  },
+  "keywords": [
+    "hexo",
+    "critical"
+  ],
+  "author": "John Whitley <j.n.whitley@gmail.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/john-whitley/hexo-critical-css/issues"
+  },
+  "homepage": "https://github.com/john-whitley/hexo-critical-css#readme",
+  "dependencies": {
+    "critical": "^0.7.2",
+    "hexo-fs": "^0.1.5",
+    "path": "^0.12.7"
+  }
+}
