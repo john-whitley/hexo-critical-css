@@ -4,7 +4,7 @@ A Hexo wrapper filter for [critical](https://github.com/addyosmani/critical#read
 
 ## Installation
 
-```
+```Shell
 npm install --save hexo-critical-css
 ```
 
@@ -33,6 +33,20 @@ Add this rule in `_config.yml` to match the closing `</head>` of the HTML file.
 ```YAML
 criticalcss:
   htmlTagToReplace: "</\\s*head>"
+```
+
+### priority
+#### Purpose
+Allows hexo-critical-css to be run in a different order in regards to other filters.
+#### Type
+integer
+#### See also
+[https://hexo.io/api/filter.html](https://hexo.io/api/filter.html)
+#### Example
+Add this rule in `_config.yml` to adjust the priority
+```YAML
+criticalcss:
+  priority: 10000
 ```
 
 ### replacementHtmlHeader
