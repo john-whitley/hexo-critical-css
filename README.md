@@ -16,9 +16,10 @@ Ensure critical parts of your CSS are within the HTML page, and then
 load your full CSS file in a defered manner.
 
 ## Configuration
-* [htmlTagToReplace](#htmlTagToReplace)
-* [replacementHtmlHeader](#replacementHtmlHeader)
-* [replacementHtmlTrailer](#replacementHtmlTrailer)
+* [htmlTagToReplace](#htmltagtoreplace)
+* [priority](#priority)
+* [replacementHtmlHeader](#replacementhtmlheader)
+* [replacementHtmlTrailer](#replacementhtmltrailer)
 
 ### htmlTagToReplace
 #### Purpose
@@ -26,8 +27,8 @@ The expression used to search the HTML document for a token or HTML tag to injec
 #### Type
 regular expression string, suitable to be passed into `new RegExp(htmlTagToReplace)`.
 #### See also
-* [replacementHtmlHeader](#replacementHtmlHeader)
-* [replacementHtmlTrailer](#replacementHtmlTrailer)
+* [replacementHtmlHeader](#replacementhtmlheader)
+* [replacementHtmlTrailer](#replacementhtmltrailer)
 #### Example
 Add this rule in `_config.yml` to match the closing `</head>` of the HTML file.
 ```YAML
@@ -55,8 +56,8 @@ When injecting the critical CSS into the HTML document, it may be useful to have
 #### Type
 string, which the critical CSS will be prefixed with
 #### See also
-* [htmlTagToReplace](#htmlTagToReplace)
-* [replacementHtmlTrailer](#replacementHtmlTrailer)
+* [htmlTagToReplace](#htmltagtoreplace)
+* [replacementHtmlTrailer](#replacementhtmltrailer)
 #### Example
 Add this rule in `_config.yml` to prepend the critical CSS output with.
 ```YAML
