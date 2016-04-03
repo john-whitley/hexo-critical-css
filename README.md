@@ -29,7 +29,7 @@ The options object that would be given to `critical.generate`
 object, the options that are defined by
 [critical](https://github.com/addyosmani/critical#options).
 
-**NOTE** hexo-critical-css stripes the option `dest`, because
+**NOTE** hexo-critical-css strips the option `dest`, because
 hexo-critical-css library cannot cope with dest (yet).
 
 This is mostly a pass-through so we limit the coupling that this library
@@ -114,6 +114,7 @@ criticalcss:
 This was written very quickly as I needed it for another project I
 am undertaking.  This means that I have work still to do.  At least:
 
+* Find a way to allow [critical](https://github.com/addyosmani/critical#options) `inline: true` option to be passed through and work.
 * Find a way to allow [critical](https://github.com/addyosmani/critical#options) `dest` option to be passed through.
 * Create an enable/disable config option.
 * Provide coding style guides

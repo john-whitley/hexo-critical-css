@@ -1,5 +1,9 @@
 # Change log
 
+## 1.0.3
+### Amended
+* fixed calling `hexo generate` repeated times, critical being injected repeated times
+
 ## 1.0.2
 ### Added
 * configuration to pass [critical generate](https://github.com/addyosmani/critical#options) options through to critical

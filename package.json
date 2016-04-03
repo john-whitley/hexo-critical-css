@@ -1,6 +1,6 @@
 {
   "name": "hexo-critical-css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Run critical in a hexo project",
   "main": "index.js",
   "scripts": {
