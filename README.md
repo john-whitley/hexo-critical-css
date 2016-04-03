@@ -16,10 +16,35 @@ Ensure critical parts of your CSS are within the HTML page, and then
 load your full CSS file in a defered manner.
 
 ## Configuration
+* [critical](#critical)
 * [htmlTagToReplace](#htmltagtoreplace)
 * [priority](#priority)
 * [replacementHtmlHeader](#replacementhtmlheader)
 * [replacementHtmlTrailer](#replacementhtmltrailer)
+
+### critical
+#### Purpose
+The options object that would be given to `critical.generate`
+#### Type
+object, the options that are defined by
+[critical](https://github.com/addyosmani/critical#options).
+
+**NOTE** hexo-critical-css stripes the option `dest`, because
+hexo-critical-css library cannot cope with dest (yet).
+
+This is mostly a pass-through so we limit the coupling that this library
+and critical has, so critical options can change with minimal impact
+on hexo-critical-css.
+#### See also
+* [critical generate](https://github.com/addyosmani/critical#options)
+
+#### Example
+Add this rule in `_config.yml` to ensure critical minify options is set.
+```YAML
+criticalcss:
+  critical:
+    minify: true
+```
 
 ### htmlTagToReplace
 #### Purpose
@@ -89,7 +114,7 @@ criticalcss:
 This was written very quickly as I needed it for another project I
 am undertaking.  This means that I have work still to do.  At least:
 
-* Pass through [critical](https://github.com/addyosmani/critical#readme) options.
+* Find a way to allow [critical](https://github.com/addyosmani/critical#options) `dest` option to be passed through.
 * Create an enable/disable config option.
 * Provide coding style guides
 * Move to an ECMA6 structure for future-proofing
