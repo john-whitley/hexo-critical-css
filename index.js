@@ -6,6 +6,9 @@ var CriticalCss = require('./lib/critical-css.js');
 hexo.config.criticalcss = assign({
   enable   : true,
   priority : 10000,
+  htmlTagToReplace : '<\\/\\s*head>',
+  replacementHtmlHeader : '<style type="text/css">',
+  replacementHtmlTrailer : '</style></head>',
 }, hexo.config.criticalcss);
 
 hexo.extend.filter.register(

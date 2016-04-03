@@ -15,6 +15,56 @@ Speed up the initial load of your hexo website.
 Ensure critical parts of your CSS are within the HTML page, and then
 load your full CSS file in a defered manner.
 
+## Configuration
+* [htmlTagToReplace](#htmlTagToReplace)
+* [replacementHtmlHeader](#replacementHtmlHeader)
+* [replacementHtmlTrailer](#replacementHtmlTrailer)
+
+### htmlTagToReplace
+#### Purpose
+The expression used to search the HTML document for a token or HTML tag to inject the critical CSS into
+#### Type
+regular expression string, suitable to be passed into `new RegExp(htmlTagToReplace)`.
+#### See also
+* [replacementHtmlHeader](#replacementHtmlHeader)
+* [replacementHtmlTrailer](#replacementHtmlTrailer)
+#### Example
+Add this rule in `_config.yml` to match the closing `</head>` of the HTML file.
+```YAML
+criticalcss:
+  htmlTagToReplace: "</\\s*head>"
+```
+
+### replacementHtmlHeader
+#### Purpose
+When injecting the critical CSS into the HTML document, it may be useful to have a prefix.
+#### Type
+string, which the critical CSS will be prefixed with
+#### See also
+* [htmlTagToReplace](#htmlTagToReplace)
+* [replacementHtmlTrailer](#replacementHtmlTrailer)
+#### Example
+Add this rule in `_config.yml` to prepend the critical CSS output with.
+```YAML
+criticalcss:
+  replacementHtmlHeader: "<style type=\"text/css\">"
+```
+
+### replacementHtmlTrailer
+#### Purpose
+When injecting the critical CSS into the HTML document, it may be useful to have a suffix.
+#### Type
+string, which the critical CSS will be suffixed with
+#### See also
+* [htmlTagToReplace](#htmlTagToReplace)
+* [replacementHtmlHeader](#replacementHtmlHeader)
+#### Example
+Add this rule in `_config.yml` to postpend the critical CSS output with.
+```YAML
+criticalcss:
+  replacementHtmlTrailer: "</style></head>"
+```
+
 ## TODO
 
 This was written very quickly as I needed it for another project I
