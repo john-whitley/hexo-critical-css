@@ -29,6 +29,7 @@ regular expression string, suitable to be passed into `new RegExp(htmlTagToRepla
 #### See also
 * [replacementHtmlHeader](#replacementhtmlheader)
 * [replacementHtmlTrailer](#replacementhtmltrailer)
+
 #### Example
 Add this rule in `_config.yml` to match the closing `</head>` of the HTML file.
 ```YAML
@@ -43,6 +44,7 @@ Allows hexo-critical-css to be run in a different order in regards to other filt
 integer
 #### See also
 [https://hexo.io/api/filter.html](https://hexo.io/api/filter.html)
+
 #### Example
 Add this rule in `_config.yml` to adjust the priority
 ```YAML
@@ -58,6 +60,7 @@ string, which the critical CSS will be prefixed with
 #### See also
 * [htmlTagToReplace](#htmltagtoreplace)
 * [replacementHtmlTrailer](#replacementhtmltrailer)
+
 #### Example
 Add this rule in `_config.yml` to prepend the critical CSS output with.
 ```YAML
@@ -73,6 +76,7 @@ string, which the critical CSS will be suffixed with
 #### See also
 * [htmlTagToReplace](#htmlTagToReplace)
 * [replacementHtmlHeader](#replacementHtmlHeader)
+
 #### Example
 Add this rule in `_config.yml` to postpend the critical CSS output with.
 ```YAML
