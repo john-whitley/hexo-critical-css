@@ -36,7 +36,7 @@ on hexo-critical-css.
 
 *Special cases for critical paramters that affect hexo-critical-css*
 
-| parameter   | reason parameter is ignored                           |
+| parameter   | effect on hexo-critical-css                           |
 | ----------- | ----------------------------------------------------- |
 | `inline`    | Changes the way that hexo-critical-css injects the CSS into the HTML.  If true, hexo-critical-css will trust the generated HTML and ignore the settings [htmlTagToReplace](#htmltagtoreplace), [replacementHtmlHeader](#replacementhtmlheader) and [replacementHtmlTrailer](#replacementhtmltrailer).  If false, hexo-critical-css will inject the critical CSS using [htmlTagToReplace](#htmltagtoreplace), [replacementHtmlHeader](#replacementhtmlheader) and [replacementHtmlTrailer](#replacementhtmltrailer). |
 
