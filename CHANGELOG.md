@@ -1,6 +1,13 @@
 # Change log
 
 ## 1.0.3
+### Added
+* configuration to allow enable/disable hexo-critical-css plugin
+
+### Amended
+* fixed intra-README links for the replacementHtmlTrailer configuration section
+
+## 1.0.3
 ### Amended
 * fixed calling `hexo generate` repeated times, critical being injected repeated times
 

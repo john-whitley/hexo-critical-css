@@ -17,6 +17,7 @@ load your full CSS file in a defered manner.
 
 ## Configuration
 * [critical](#critical)
+* [enable](#enable)
 * [htmlTagToReplace](#htmltagtoreplace)
 * [priority](#priority)
 * [replacementHtmlHeader](#replacementhtmlheader)
@@ -44,6 +45,18 @@ Add this rule in `_config.yml` to ensure critical minify options is set.
 criticalcss:
   critical:
     minify: true
+```
+
+### enable
+#### Purpose
+Use a configuration option to turn off hexo-critical-css.
+#### Type
+boolean, true will enable hexo-critical-css.
+#### Example
+Add this rule in `_config.yml` to enable hexo-critical-css
+```YAML
+criticalcss:
+  enable: true
 ```
 
 ### htmlTagToReplace
@@ -99,8 +112,8 @@ When injecting the critical CSS into the HTML document, it may be useful to have
 #### Type
 string, which the critical CSS will be suffixed with
 #### See also
-* [htmlTagToReplace](#htmlTagToReplace)
-* [replacementHtmlHeader](#replacementHtmlHeader)
+* [htmlTagToReplace](#htmltagtoreplace)
+* [replacementHtmlHeader](#replacementhtmlheader)
 
 #### Example
 Add this rule in `_config.yml` to postpend the critical CSS output with.
@@ -116,7 +129,6 @@ am undertaking.  This means that I have work still to do.  At least:
 
 * Find a way to allow [critical](https://github.com/addyosmani/critical#options) `inline: true` option to be passed through and work.
 * Find a way to allow [critical](https://github.com/addyosmani/critical#options) `dest` option to be passed through.
-* Create an enable/disable config option.
 * Provide coding style guides
 * Move to an ECMA6 structure for future-proofing
 * Add babel as a pre-publish step to ensure current compatibility
