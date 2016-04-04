@@ -1,11 +1,12 @@
 # Change log
 
-## 1.0.3
+## 1.0.4
 ### Added
 * configuration to allow enable/disable hexo-critical-css plugin
 
 ### Amended
 * fixed intra-README links for the replacementHtmlTrailer configuration section
+* fixed a bug - the promises should be returned from the crtiical worker
 
 ## 1.0.3
 ### Amended
