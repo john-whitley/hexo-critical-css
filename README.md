@@ -34,6 +34,12 @@ This is mostly a pass-through so we limit the coupling that this library
 and critical has, so critical options can change with minimal impact
 on hexo-critical-css.
 
+*Special cases for critical paramters that affect hexo-critical-css*
+
+| parameter   | reason parameter is ignored                           |
+| ----------- | ----------------------------------------------------- |
+| `inline`    | Changes the way that hexo-critical-css injects the CSS into the HTML.  If true, hexo-critical-css will trust the generated HTML and ignore the settings [htmlTagToReplace](#htmltagtoreplace), [replacementHtmlHeader](#replacementhtmlheader) and [replacementHtmlTrailer](#replacementhtmltrailer).  If false, hexo-critical-css will inject the critical CSS using [htmlTagToReplace](#htmltagtoreplace), [replacementHtmlHeader](#replacementhtmlheader) and [replacementHtmlTrailer](#replacementhtmltrailer). |
+
 *Special cases for critical paramters that are not passed through*
 
 | parameter | reason parameter is ignored                           |
@@ -133,8 +139,8 @@ criticalcss:
 This was written very quickly as I needed it for another project I
 am undertaking.  This means that I have work still to do.  At least:
 
-* Find a way to allow [critical](https://github.com/addyosmani/critical#options) `inline: true` option to be passed through and work.
 * Find a way to allow [critical](https://github.com/addyosmani/critical#options) `dest` option to be passed through.
+* Seek a way to get the inline deferred CSS link to not use inline scripts to be compatible with CSP rules preventing inline scripts.
 * Provide coding style guides
 * Move to an ECMA6 structure for future-proofing
 * Add babel as a pre-publish step to ensure current compatibility

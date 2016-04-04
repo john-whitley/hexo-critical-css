@@ -3,6 +3,7 @@
 ## 1.0.4
 ### Added
 * configuration to allow enable/disable hexo-critical-css plugin
+* configuration to allow inline critical hexo-critical-css plugin
 
 ### Amended
 * fixed intra-README links for the replacementHtmlTrailer configuration section
