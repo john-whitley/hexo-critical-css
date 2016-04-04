@@ -1,6 +1,6 @@
 # Hexo Critical CSS
 
-A Hexo wrapper filter for [critical](https://github.com/addyosmani/critical#readme).
+A [Hexo](https://hexo.io/) wrapper filter for [critical](https://github.com/addyosmani/critical#readme).
 
 ## Installation
 
@@ -10,7 +10,7 @@ npm install --save hexo-critical-css
 
 ## Motivation
 
-Speed up the initial load of your hexo website.
+Speed up the initial load of your [Hexo](https://hexo.io/) website.
 
 Ensure critical parts of your CSS are within the HTML page, and then
 load your full CSS file in a defered manner.

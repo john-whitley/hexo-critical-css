@@ -8,6 +8,7 @@
 * fixed intra-README links for the replacementHtmlTrailer configuration section
 * fixed a bug - the promises should be returned from the crtiical worker
 * improved the documentation about the critical options that are not passed through to critical.generate
+* made hexo a link to the hexo website in README.md
 
 ## 1.0.3
 ### Amended
