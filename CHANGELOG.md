@@ -7,6 +7,7 @@
 ### Amended
 * fixed intra-README links for the replacementHtmlTrailer configuration section
 * fixed a bug - the promises should be returned from the crtiical worker
+* improved the documentation about the critical options that are not passed through to critical.generate
 
 ## 1.0.3
 ### Amended

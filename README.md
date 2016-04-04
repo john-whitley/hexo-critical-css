@@ -30,12 +30,18 @@ The options object that would be given to `critical.generate`
 object, the options that are defined by
 [critical](https://github.com/addyosmani/critical#options).
 
-**NOTE** hexo-critical-css strips the option `dest`, because
-hexo-critical-css library cannot cope with dest (yet).
-
 This is mostly a pass-through so we limit the coupling that this library
 and critical has, so critical options can change with minimal impact
 on hexo-critical-css.
+
+*Special cases for critical paramters that are not passed through*
+
+| parameter | reason parameter is ignored                           |
+| --------- | ----------------------------------------------------- |
+| `base`    | hexo-critical-css library determines base for itself. |
+| `dest`    | hexo-critical-css library cannot cope with dest (yet) |
+| `src`     | hexo-critical-css library determines src for itself.  |
+
 #### See also
 * [critical generate](https://github.com/addyosmani/critical#options)
 
