@@ -16,6 +16,10 @@ Ensure critical parts of your CSS are within the HTML page, and then
 load your full CSS file in a defered manner.
 
 ## Configuration
+This respects
+[skip_render](https://hexo.io/docs/configuration.html#Directory) to not
+run critical on anything that matches skip render.
+
 * [critical](#critical)
 * [enable](#enable)
 * [htmlTagToReplace](#htmltagtoreplace)
