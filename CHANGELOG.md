@@ -1,5 +1,13 @@
 # Change log
 
+## 1.0.5
+### Amended
+* critical is now run in series, so that critical does not fail due to lack of system resources
+* skip_render configuration option is now respected, so critical is not run on files that match the patterns in skip_render.
+
+### Thanks
+Many thanks to @qkevinto for his pull request that fixed these two issues.
+
 ## 1.0.4
 ### Added
 * configuration to allow enable/disable hexo-critical-css plugin
