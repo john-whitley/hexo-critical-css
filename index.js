@@ -14,6 +14,7 @@ hexo.config.criticalcss.critical = assign({
 
 hexo.config.criticalcss = assign({
   enable   : true,
+  perPageCss : false,
   priority : 10000,
   htmlTagToReplace : '<\\/\\s*head>',
   replacementHtmlHeader : '<style type="text/css">',

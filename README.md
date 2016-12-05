@@ -23,6 +23,7 @@ run critical on anything that matches skip render.
 * [critical](#critical)
 * [enable](#enable)
 * [htmlTagToReplace](#htmltagtoreplace)
+* [perPageCss](#perpagecss)
 * [priority](#priority)
 * [replacementHtmlHeader](#replacementhtmlheader)
 * [replacementHtmlTrailer](#replacementhtmltrailer)
@@ -89,6 +90,23 @@ Add this rule in `_config.yml` to match the closing `</head>` of the HTML file.
 ```YAML
 criticalcss:
   htmlTagToReplace: "</\\s*head>"
+```
+
+### perPageCss
+#### Purpose
+There is difference of opinion on whether a CSS asset should be defined as site-wide, or per-page.  This option allows you to choose which policy you wish to adopt.
+
+Adopting a per-page implementation means that you will have a css directory in each of your subdirectories in your public directory that has an HTML file within it.  Adopting a site-wide implementation means that you will have one css directory in public.
+
+The default is site-wide implementation.
+#### Type
+boolean
+
+#### Example
+Add this rule in `_config.yml` to adopt per-page CSS implementation.
+```YAML
+criticalcss:
+  perPageCss: true
 ```
 
 ### priority
